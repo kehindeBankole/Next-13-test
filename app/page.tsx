@@ -1,9 +1,14 @@
+import About from 'components/About';
+import Hero from 'components/Hero';
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className='bg-red-500'>
-      <div className='container mx-auto'>http://localhost:3000</div>
+    <div className=''>
+      <div className='container mx-auto px-6'>
+        <Hero />
+        <About/>
+      </div>
     </div>
   );
 }
