@@ -10,7 +10,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className=''>
+    <div>
       <div className='container mx-auto flex justify-between items-center p-6 w-full'>
        <Link href="/">
        <Image src={logo} className="aspect-auto" alt='logo' width={133} height={44} />
