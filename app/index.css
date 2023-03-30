@@ -640,6 +640,10 @@ video {
   display: none !important;
 }
 
+.aspect-auto {
+  aspect-ratio: auto !important;
+}
+
 .h-12 {
   height: 3rem !important;
 }
@@ -658,10 +662,6 @@ video {
 
 .h-\[46px\] {
   height: 46px !important;
-}
-
-.h-\[62px\] {
-  height: 62px !important;
 }
 
 .w-6 {
@@ -704,6 +704,33 @@ video {
 .rotate-\[45deg\] {
   --tw-rotate: 45deg !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite !important;
+}
+
+@keyframes moveFromBottom {
+  from {
+    opacity: 0;
+    transform: scale(.8);
+  }
+}
+
+.animate-moveFromBottom {
+  animation: moveFromBottom .6s ease both !important;
 }
 
 @keyframes tilt {

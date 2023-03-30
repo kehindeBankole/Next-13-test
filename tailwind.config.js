@@ -16,16 +16,23 @@ module.exports = {
       },
       animation: {
         tilt: 'tilt 3s linear infinite',
+        moveFromBottom: 'moveFromBottom .6s ease both',
       },
       keyframes: {
         tilt: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
         },
+        moveFromBottom: {
+          from: {
+            opacity: '0',
+            transform: 'scale(.8)',
+          },
+        },
       },
       fontFamily: {
-        'mont': "'Montserrat', sans-serif",
-        'manrope': "'Manrope', sans-serif",
+        mont: "'Montserrat', sans-serif",
+        manrope: "'Manrope', sans-serif",
       },
     },
   },

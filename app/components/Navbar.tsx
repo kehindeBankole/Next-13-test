@@ -13,7 +13,7 @@ export default function Navbar() {
     <div className=''>
       <div className='container mx-auto flex justify-between items-center p-6 w-full'>
        <Link href="/">
-       <Image src={logo} alt='logo' width={133} height={44} />
+       <Image src={logo} className="aspect-auto" alt='logo' width={133} height={44} />
        </Link>
         <button
           className='h-6 w-6 text-primary lg:hidden'
